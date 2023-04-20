@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="subcontainer" id="cv-build">
+            <h1>Resume Builder<button onclick="LightDark()" id="dark">Dark Theme</button></h1>
+
+        <!-- cv form -->
+        <div class="container">
+            <div class="left">
+                <h2>Personal Information</h2>
+                <div class="labinput">
+                    <div class="text"><label for=""><span style="color: red;">*</span>Full Name : -</label></div>
+                    <input id="namefield" type="text" required="required" placeholder="Enter Full Name" />
+                </div>
+                <div class="labinput">
+                    <div class="text"><label for="">Tag Name : -</label></div>
+                    <input id="Tagfield" type="text" placeholder="Enter Tag Name" />
+                </div>
+                <div class="labinput">
+                    <div class="text"><label for="">Objective : -</label></div>
+                    <textarea  name="" id="objfield" rows="3" placeholder="Enter Your Objective"></textarea>
+                </div>
+                <div class="contactdts" id="ctdts" onclick="CntDts()">
+                    <p>Contact Details</p>
+                    <div class="labinput">
+                        <div class="text"><label for=""><span style="color: red;">*</span>Contact No. : -</label></div>
+                        <input id="phfield" type="number" required="required" placeholder="Enter Contact Number" />
+                    </div>
+                    <div class="labinput">
+                        <div class="text"><label for=""><span style="color: red;">*</span>Email : -</label></div>
+                        <input id="emailfield" type="email" required="required" placeholder="Enter Email ID" />
+                    </div>
+                    <div class="labinput">
+                        <div class="text"><label for=""><span style="color: red;">*</span>Address : -</label></div>
+                        <textarea name="" id="addfield" rows="3" placeholder="Enter Your Address"
+                            required="required"></textarea>
+                    </div>
+                </div>
+                <div class="social">
+                    <p>Social Links</p>
+                    <div class="labinput">
+                        <div class="text"><label for="">LinkedIn Profile : -</label></div>
+                        <input id="linkdfield" type="link" placeholder="Enter Profile Link" />
+                    </div>
+                    <div class="labinput">
+                        <div class="text"><label for="">Github Profile : -</label></div>
+                        <input id="gitfield" type="link" placeholder="Enter Profile Link" />
+                    </div>
+                    <div class="labinput">
+                        <div class="text"><label for="">Leetcode Profile : -</label></div>
+                        <input id="leetfield" type="link" placeholder="Enter Profile Link" />
+                    </div>
+                    <div class="labinput">
+                        <div class="text"><label for="">Codeforce Profile : -</label></div>
+                        <input id="codefield" type="link" placeholder="Enter Profile Link" />
+                    </div>
+                    <div class="labinput">
+                        <div class="text"><label for="">Portpholio : -</label></div>
+                        <input id="portfield" type="link" placeholder="Enter Profile Link" />
+                    </div>
+                </div>
+                <div class="exparties">
+                    <p>Exparties</p>
+                    <div class="labinput" id="skill">
+                        <div class="text"><label for=""><span style="color: red;">*</span>Technical Skills : -</label>
+                        </div><br>
+                        <input class="exp" id="expartfield" type="text" required="required" placeholder="MS Office" />
+                    </div>
+                    <button onclick="AddField()" id="add">ADD MORE</button>
+                </div>
+                <div class="languages">
+                    <p>Speaking Skills</p>
+                    <div class="labinput" id="lang">
+                        <div class="text"><label for=""><span style="color: red;">*</span>Languages : -</label></div>
+                        <br>
+                        <input class="langg" id="langfield" type="text" required="required" placeholder="Enter Language" />
+                    </div>
+                    <button onclick="AddLang()" id="add">ADD MORE</button>
+                </div>
+            </div>
+
+            <!-- right Section -->
+
+            <div class="right">
+                <h2>Professional Information</h2>
+
+                <div class="education">
+                    <p>Education</p>
+                    <div class="labinput" id="edu">
+                        <div class="text"><label for=""><span style="color: red;">*</span>Educations : -</label></div>
+                        <div class="qulification">
+                            <div class="name">
+                                <input id="intsfield" type="text" placeholder="Enter Institute Name" />
+                            <input id="qualifield" type="text" placeholder="Enter Qualification">
+                            </div>
+                            
+                            <div class="date">
+                                <input id="marksfield" type="text" placeholder="Enter Marks with % or cgpa">
+                                <input id="sdfield" type="number" name="" placeholder="start Year">
+                                <input type="number" name="" id="edfield" placeholder="end Year">
+                            </div>
+                        </div>
+                        <div class="qulification">
+                            <div class="name">
+                                <input id="intsfield" type="text" placeholder="Enter Institute Name" />
+                            <input id="qualifield" type="text" placeholder="Enter Qualification">
+                            </div>
+                            
+                            <div class="date">
+                                <input id="marksfield" type="text" placeholder="Enter Marks with % or cgpa">
+                                <input id="sdfield" type="number" name="" placeholder="start Year">
+                                <input type="number" name="" id="edfield" placeholder="end Year">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="AddEdu()">ADD MORE</button>
+                </div>
+                <div class="certificates">
+                    <p>Certificates</p>
+                    <div class="labinput" id="certifi">
+                        <div class="text"><label for="">Certificates : -</label></div>
+                        <div class="certi">
+                            <input id="ceritnfield" type="text" placeholder="Enter Name" />
+                            <input id="ceritdtlsfield" type="text" placeholder="Enter Details about Certificate">
+                            <input id="ceritdatefield" type="date">
+                        </div>
+                    </div>
+                    <button onclick="AddCerti()">ADD MORE</button>
+                </div>
+                <div class="experinces">
+                    <p>Experinces</p>
+                    <div class="labinput" id="work">
+                        <div class="text"><label for="">Work Experinces : -</label>
+                        </div>
+                        <input id="exppnfield" type="text" placeholder="Enter Position Name" />
+                        <input id="expcnfield" type="text" placeholder="Enter Company Name" />
+                        <textarea id="expdtlsfield" name="" id="" rows="3" placeholder="Enter Details"></textarea>
+                        <div class="date">
+                            <input id="expsdfield" type="number" name="" id="" placeholder="start Year">
+                            <input id="expedfield" type="number" name="" id="" placeholder="end Year">
+                        </div>
+                    </div>
+                    <button onclick="AddWork()">ADD MORE</button>
+                </div>
+                <div class="projects">
+                    <p>Projects</p>
+                    <div class="labinput" id="project">
+                        <div class="text"><label for="">Projects : -</label>
+                        </div>
+                        <input id="pronfield" type="text" placeholder="Enter Project Name" />
+                        <textarea name="" id="prodtlsfield" rows="3" placeholder="Enter Details"></textarea>
+                        <div class="date">
+                            <input id="prosdfield" type="number" name="" id="" placeholder="start Year">
+                            <input id="proedfield" type="number" name="" id="" placeholder="end Year">
+                        </div>
+                    </div>
+                    <button onclick="AddProject()">ADD MORE</button>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn" onclick="GenerateCV()">Genegate Resume</button>
+        </div>
+        <!-- template of cv -->
+        <div class="cvTemplate" id="cvT">
+            <div class="subTemplate">
+                <div class="personal">
+                    <div class="pic" onclick="changePic()">
+                        <img id="pic" src="./user.png" alt="">
+                    </div>
+                    <div class="expert">
+                        <h1>Expertise</h1>
+                        <div id="expT"></div>
+                    </div>
+                    <div class="lang">
+                        <h1>Language</h1>
+                        <div id="langT"></div>
+    
+                    </div>
+    
+                    <div class="certi">
+                        <h1>certificate</h1>
+                        <div class="certichild">
+                            <h2 id="ceriNT">TCS CodeVita</h2>
+                            <p id="certiCNT">Tata Consultancy Services</p>
+                            <p id="certiDT">2021</p>
+                        </div>
+                        <div class="certichild">
+                            <h2>TCS CodeVita</h2>
+                            <p>Tata Consultancy Services</p>
+                            <p>2021</p>
+                        </div>
+    
+                    </div>
+    
+                    <div class="contact">
+                        <h1>Contact</h1>
+                        <p id="contcAdT">Vill.+P.O. - Palashpai, P.S. - Daspur, Dist. - Paschim Medinipur, West Bengal, 721146</p>
+                        <p>Email - <a id="contcET" href="mailto:sukhendu.bhukta@gmail.com">sukhendu.bhukta@gmail.com</a>
+                        </p>
+                        <p>Phone - <a id="contcPhT" href="tel:+917319164971">+917319164971</a>
+                        </p>
+                        <p class="soci">Socials -
+                            <a id="contcLnT" href="https://www.linkedin.com">LinkedIn</a>
+                            <a id="contcGtT" href="https://www.Github.com">Github</a>
+                            <a id="contcLcT" href="https://www.linkedin.com">LeetCode</a>
+                            <a id="contcCfT" href="https://www.linkedin.com">Codeforce</a>
+                            <a id="contcPpT" href="https://www.linkedin.com">Portpholio</a>
+                        </p>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="profesional">
+                    <h2 id="nameT">Sukhendu Bhukta</h2>
+                    <h3 id="TagT">JAVA Devoloper</h3>
+                    <p id="ObjT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsam, magnam dolorem aliquam, iste
+                        ullam ipsum sint quod mollitia temporibus accusantium ipsa possimus blanditiis officiis esse. Modi
+                        ducimus accusamus quasi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsam, magnam
+                        dolorem aliquam, iste
+                        ullam ipsum sint quod mollitia temporibus accusantium ipsa possimus blanditiis officiis esse. Modi
+                        ducimus accusamus quasi!
+                    </p>
+                    <div class="edu">
+                        <h1>Education</h1>
+                        <div id="edu2"></div>
+                        <div class="subedu">
+                            <div class="date">
+                                <p id="eduDT">2019 - 2023</p>
+                            </div>
+                            <div class="institue">
+                                <h2 id="eduInT">College of Engineering and Management, Kolaghat</h2>
+                                <p id="eduDgT">B.Tech</p>
+                                <p id="eduMkT">Marks - 8.5 cgpa</p>
+                            </div>
+                        </div>
+                        <div class="subedu">
+                            <div class="date">
+                                <p>2019 - 2023</p>
+                            </div>
+                            <div class="institue">
+                                <h2>College of Engineering and Management, Kolaghat</h2>
+                                <p class="category">B.Tech</p>
+                                <p class="remark">Marks - 8.5 cgpa</p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="work">
+                        <h1>work Experience</h1>
+                        <div class="subexp">
+                            <div class="date">
+                                <p id="expDT">2019 - 2023</p>
+                            </div>
+                            <div class="institue">
+                                <h2 id="expPnT">Junior Software Devolper</h2>
+                                <p id="expCnT" class="company">TCS</p>
+                                <p id="expDtlsT" class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
+                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
+                                    architecto et aliquid similique labore!</p>
+                            </div>
+                        </div>
+                        <div class="subexp">
+                            <div class="date">
+                                <p>2019 - 2023</p>
+                            </div>
+                            <div class="institue">
+                                <h2>Junior Software Devolper</h2>
+                                <p class="company">TCS</p>
+                                <p class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
+                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
+                                    architecto et aliquid similique labore!</p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="proj">
+                        <h1>Project</h1>
+                        <div class="subproj">
+                            <div class="date">
+                                <p id="proDT">2019 - 2023</p>
+                            </div>
+                            <div class="institue">
+                                <h2 id="proNT">Junior Software Devolper</h2>
+                                
+                                <p id="proDtlsT" class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
+                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
+                                    architecto et aliquid similique labore!</p>
+                            </div>
+                        </div>
+                        <div class="subproj">
+                            <div class="date">
+                                <p>2019 - 2023</p>
+                            </div>
+                            <div class="institue">
+                                <h2>Junior Software Devolper</h2>
+                                
+                                <p class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
+                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
+                                    architecto et aliquid similique labore!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="printCV()">Print</button>
+        </div>
+        <!-- <footer>Designe & Devolop by Sukhendu Bhukta</footer> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

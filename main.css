@@ -1,0 +1,875 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input,
+select {
+  border: none;
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+a {
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.maincontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.maincontainer .subcontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.maincontainer .subcontainer h1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-size: 3rem;
+  width: 100%;
+}
+.maincontainer .subcontainer h1 button {
+  position: relative;
+  left: 37%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  background-color: #021225;
+  color: #fff;
+  border-radius: 5px;
+}
+.maincontainer .subcontainer .container {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.maincontainer .subcontainer .container .left {
+  position: relative;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background: linear-gradient(to left, rgb(0, 244, 228), rgb(4, 217, 255)) rgb(0, 244, 228);
+  border-radius: 1rem;
+}
+.maincontainer .subcontainer .container .left h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-decoration: underline;
+  color: #000;
+  text-transform: uppercase;
+}
+.maincontainer .subcontainer .container .left .labinput {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+.maincontainer .subcontainer .container .left .labinput .text {
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+.maincontainer .subcontainer .container .left .labinput .text label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .labinput input {
+  width: 98%;
+  padding: 1rem 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .left .labinput textarea {
+  width: 98%;
+  padding: 1rem 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .left .contactdts {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .left .contactdts p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .contactdts textarea {
+  width: 98%;
+  padding: 1rem 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .left .social {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .left .social p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .exparties {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .left .exparties p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .exparties .labinput {
+  width: 100%;
+  padding: 0rem 1.5rem;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.maincontainer .subcontainer .container .left .exparties .labinput .text {
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+.maincontainer .subcontainer .container .left .exparties .labinput .text label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .exparties .labinput input {
+  width: 90%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .left .exparties button {
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  background: #021225;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .left .languages {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .left .languages p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .languages .labinput {
+  width: 100%;
+  padding: 0rem 1.5rem;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.maincontainer .subcontainer .container .left .languages .labinput .text {
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+.maincontainer .subcontainer .container .left .languages .labinput .text label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.maincontainer .subcontainer .container .left .languages .labinput input {
+  width: 90%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .left .languages button {
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  background: #021225;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .right {
+  position: relative;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background: linear-gradient(to right, rgb(0, 244, 228), rgb(4, 217, 255));
+  border-radius: 1rem;
+}
+.maincontainer .subcontainer .container .right h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-decoration: underline;
+  color: #000;
+  text-transform: uppercase;
+}
+.maincontainer .subcontainer .container .right button {
+  padding: 0.2rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  background: #021225;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .right .labinput {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+.maincontainer .subcontainer .container .right .labinput .text {
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+.maincontainer .subcontainer .container .right .labinput .text label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.maincontainer .subcontainer .container .right .labinput input {
+  width: 98%;
+  padding: 1rem 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .right .labinput textarea {
+  width: 98%;
+  padding: 1rem 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border-left: 0.3rem solid #000;
+  border-right: 0.3rem solid #000;
+  border-radius: 0.5rem;
+}
+.maincontainer .subcontainer .container .right .education {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .right .education p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .right .education .qulification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: 1px solid #d5d4d4;
+}
+.maincontainer .subcontainer .container .right .education .qulification input {
+  margin: 1rem;
+}
+.maincontainer .subcontainer .container .right .education .qulification .name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.maincontainer .subcontainer .container .right .education .qulification .date {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.maincontainer .subcontainer .container .right .education .qulification .date input {
+  margin: 0 0.5rem;
+}
+.maincontainer .subcontainer .container .right .certificates {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .right .certificates p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .right .certificates .certi {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .subcontainer .container .right .certificates .certi input {
+  margin: 1rem;
+}
+.maincontainer .subcontainer .container .right .experinces {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .right .experinces p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .right .experinces input {
+  margin: 1rem 0;
+}
+.maincontainer .subcontainer .container .right .experinces .date {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d5d4d4;
+}
+.maincontainer .subcontainer .container .right .experinces .date input {
+  margin: 1rem 0.5rem;
+}
+.maincontainer .subcontainer .container .right .projects {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 0.7rem;
+}
+.maincontainer .subcontainer .container .right .projects p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.maincontainer .subcontainer .container .right .projects input {
+  margin: 1rem 0;
+}
+.maincontainer .subcontainer .container .right .projects .date {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d5d4d4;
+}
+.maincontainer .subcontainer .container .right .projects .date input {
+  margin: 1rem 0.5rem;
+}
+.maincontainer .subcontainer .btn {
+  padding: 1.5rem 5rem;
+  border: none;
+  font-size: 1.7rem;
+  background-color: #000;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+.maincontainer #cvT {
+  display: none;
+}
+.maincontainer .cvTemplate {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.maincontainer .cvTemplate .subTemplate {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.maincontainer .cvTemplate .subTemplate .personal {
+  position: relative;
+  margin: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  background: #d5d4d4;
+}
+.maincontainer .cvTemplate .subTemplate .personal .pic {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .personal .pic img {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .expert {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .personal .expert h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .personal .expert p {
+  font-size: 1.6rem;
+  padding: 0.2rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .lang {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .personal .lang h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .personal .lang p {
+  font-size: 1.6rem;
+  padding: 0.2rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .certi {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .personal .certi h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .personal .certi .certichild {
+  position: relative;
+  width: 100%;
+}
+.maincontainer .cvTemplate .subTemplate .personal .certi .certichild h2 {
+  font-size: 1.6rem;
+  padding: 0rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .certi .certichild p {
+  font-size: 1.6rem;
+  padding: 0.2rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .certi .certichild :last-child {
+  padding-bottom: 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .contact {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .contact h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .personal .contact p {
+  font-size: 1.6rem;
+  padding: 0.2rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .personal .contact .soci a {
+  padding: 0 1rem;
+  color: rgb(0, 4, 255);
+  border-right: 2px solid #000;
+}
+.maincontainer .cvTemplate .subTemplate .profesional {
+  position: relative;
+  margin: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional h2 {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 400%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional h3 {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 200%;
+  margin: 1rem 0;
+  letter-spacing: 5px;
+  color: #7b7b7b;
+}
+.maincontainer .cvTemplate .subTemplate .profesional p {
+  font-size: 150%;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu .date {
+  position: relative;
+  width: 15%;
+  padding: 0rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu .institue {
+  position: relative;
+  width: 80%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu .institue h2 {
+  padding: 0.4rem 0rem;
+  font-size: 150%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu p {
+  font-size: 1.6rem;
+  padding: 0.2rem 0rem;
+  border: none;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu :last-child {
+  padding-bottom: 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 2px solid rgb(36, 36, 255);
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work .subexp {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work .subexp .date {
+  position: relative;
+  width: 15%;
+  padding: 0rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work .subexp .institue {
+  position: relative;
+  width: 80%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work .subexp .institue h2 {
+  padding: 0.4rem 0rem;
+  font-size: 150%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work .subexp p {
+  font-size: 1.6rem;
+  padding: 0.2rem 0rem;
+  border: none;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .work .subexp :last-child {
+  padding-bottom: 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj h1 {
+  position: relative;
+  width: 100%;
+  font-size: 200%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj .subproj {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj .subproj .date {
+  position: relative;
+  width: 15%;
+  padding: 0rem 1rem;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj .subproj .institue {
+  position: relative;
+  width: 80%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj .subproj .institue h2 {
+  padding: 0.4rem 0rem;
+  font-size: 150%;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj .subproj p {
+  font-size: 1.6rem;
+  padding: 0.2rem 0rem;
+  border: none;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .proj .subproj :last-child {
+  padding-bottom: 1rem;
+}
+.maincontainer .cvTemplate button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #000;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+.maincontainer footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */
