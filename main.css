@@ -56,6 +56,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
 }
 .maincontainer .subcontainer {
   position: relative;
@@ -727,32 +728,41 @@ body {
   align-items: flex-start;
   text-decoration: none;
 }
-.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu {
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 .subedu {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu .date {
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 .subedu .date {
   position: relative;
   width: 15%;
   padding: 0rem 1rem;
 }
-.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu .institue {
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 .subedu .institue {
   position: relative;
   width: 80%;
 }
-.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu .institue h2 {
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 .subedu .institue h2 {
+  width: 100%;
   padding: 0.4rem 0rem;
   font-size: 150%;
 }
-.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu p {
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 .subedu p {
   font-size: 1.6rem;
   padding: 0.2rem 0rem;
   border: none;
 }
-.maincontainer .cvTemplate .subTemplate .profesional .edu .subedu :last-child {
+.maincontainer .cvTemplate .subTemplate .profesional .edu #edu2 .subedu :last-child {
   padding-bottom: 1rem;
 }
 .maincontainer .cvTemplate .subTemplate .profesional .work {

@@ -56,10 +56,11 @@ const AddEdu = () => {
 
     let inputob1 = document.createElement('input');
     inputob1.setAttribute('placeholder', "Enter Institute Name");
-    inputob1.setAttribute('id', 'intsfield');
+    inputob1.classList.add('intsfield');
 
     let inputob2 = document.createElement('input');
     inputob2.setAttribute('placeholder', "Enter Qualification");
+    inputob2.classList.add('qualifield');
 
 
 
@@ -68,14 +69,17 @@ const AddEdu = () => {
 
     let inputob5 = document.createElement('input');
     inputob5.setAttribute('placeholder', "Enter Marks with % or cgpa");
+    inputob5.classList.add('marksfield');
 
     let inputob3 = document.createElement('input');
     inputob3.setAttribute('placeholder', "start Year");
     inputob3.setAttribute('type', 'number');
+    inputob3.classList.add('sdfield');
 
     let inputob4 = document.createElement('input');
     inputob4.setAttribute('placeholder', "end Year");
     inputob4.setAttribute('type', 'number');
+    inputob4.classList.add('edfield');
 
     newDiv2.appendChild(inputob5);
     newDiv2.appendChild(inputob3);
@@ -98,12 +102,15 @@ const AddCerti = () => {
 
     let inputob1 = document.createElement('input');
     inputob1.setAttribute('placeholder', "Enter Name");
+    inputob1.classList.add('ceritnfield');
 
     let inputob2 = document.createElement('input');
     inputob2.setAttribute('placeholder', "Enter Details about Certificate");
+    inputob2.classList.add('ceritdtlsfield');
 
     let inputob3 = document.createElement('input');
     inputob3.setAttribute('type', "date");
+    inputob3.classList.add('ceritdatefield');
 
     newDiv.appendChild(inputob1);
     newDiv.appendChild(inputob2);
@@ -118,11 +125,17 @@ const AddCerti = () => {
 const AddWork = () => {
     let inputob1 = document.createElement('input');
     inputob1.setAttribute('placeholder', "Enter Postion Name");
+    inputob1.classList.add('exppnfield');
+
     let inputob2 = document.createElement('input');
     inputob2.setAttribute('placeholder', "Enter Company Name");
+    inputob2.classList.add('expcnfield');
+
 
     let textbox1 = document.createElement('textarea');
-    textbox1.setAttribute('placeholder', 'Enter Details')
+    textbox1.setAttribute('placeholder', 'Enter Details');
+    textbox1.classList.add('expdtlsfield');
+
 
     let newDiv2 = document.createElement('div');
     newDiv2.classList.add('date');
@@ -130,10 +143,14 @@ const AddWork = () => {
     let inputob3 = document.createElement('input');
     inputob3.setAttribute('placeholder', "start Year");
     inputob3.setAttribute('type', 'number');
+    inputob3.classList.add('expsdfield');
+
 
     let inputob4 = document.createElement('input');
     inputob4.setAttribute('placeholder', "end Year");
     inputob4.setAttribute('type', 'number');
+    inputob4.classList.add('expedfield');
+
 
     newDiv2.appendChild(inputob3);
     newDiv2.appendChild(inputob4);
@@ -151,9 +168,11 @@ const AddWork = () => {
 const AddProject = () => {
     let inputob1 = document.createElement('input');
     inputob1.setAttribute('placeholder', "Enter Project Name");
+    inputob1.classList.add('pronfield');
 
     let textbox1 = document.createElement('textarea');
-    textbox1.setAttribute('placeholder', 'Enter Details')
+    textbox1.setAttribute('placeholder', 'Enter Details');
+    textbox1.classList.add('prodtlsfield');
 
     let newDiv2 = document.createElement('div');
     newDiv2.classList.add('date');
@@ -161,10 +180,12 @@ const AddProject = () => {
     let inputob3 = document.createElement('input');
     inputob3.setAttribute('placeholder', "start Year");
     inputob3.setAttribute('type', 'number');
+    inputob3.classList.add('prosdfield');
 
     let inputob4 = document.createElement('input');
     inputob4.setAttribute('placeholder', "end Year");
     inputob4.setAttribute('type', 'number');
+    inputob4.classList.add('proedfield');
 
     newDiv2.appendChild(inputob3);
     newDiv2.appendChild(inputob4);
@@ -183,52 +204,142 @@ const changePic = () => {
 
 //Generate CV
 const GenerateCV = () => {
-    // let namefieldob = document.getElementById('namefield').value;
-    // let nameTob = document.getElementById('nameT');
-    // nameTob.innerHTML = namefieldob;
+    let namefieldob = document.getElementById('namefield').value;
+    let nameTob = document.getElementById('nameT');
+    nameTob.innerHTML = namefieldob;
 
-    // let Tagfieldob = document.getElementById('Tagfield').value;
-    // let TagTob = document.getElementById('TagT');
-    // TagTob.innerHTML = Tagfieldob;
+    let Tagfieldob = document.getElementById('Tagfield').value;
+    let TagTob = document.getElementById('TagT');
+    TagTob.innerHTML = Tagfieldob;
 
-    // document.getElementById('ObjT').innerHTML = document.getElementById('objfield').value;
+    document.getElementById('ObjT').innerHTML = document.getElementById('objfield').value;
 
-    // document.getElementById('contcPhT').innerHTML = document.getElementById('phfield').value;
-    // document.getElementById('contcPhT').setAttribute('href', document.getElementById('phfield').value);
-    // document.getElementById('contcET').innerHTML = document.getElementById('emailfield').value;
-    // document.getElementById('contcET').setAttribute('href', "document.getElementById('emailfield').value");
-    // document.getElementById('contcAdT').innerHTML = document.getElementById('addfield').value;
-    // document.getElementById('contcLnT').setAttribute('href', document.getElementById('linkdfield').value);
-    // document.getElementById('contcGtT').setAttribute('href', document.getElementById('gitfield').value);
-    // document.getElementById('contcLcT').setAttribute('href', document.getElementById('leetfield').value);
-    // document.getElementById('contcCfT').setAttribute('href', document.getElementById('codefield').value);
-    // document.getElementById('contcPpT').setAttribute('href', document.getElementById('portfield').value);
+    document.getElementById('contcPhT').innerHTML = document.getElementById('phfield').value;
+    document.getElementById('contcPhT').setAttribute('href', document.getElementById('phfield').value);
+    document.getElementById('contcET').innerHTML = document.getElementById('emailfield').value;
+    document.getElementById('contcET').setAttribute('href', "document.getElementById('emailfield').value");
+    document.getElementById('contcAdT').innerHTML = document.getElementById('addfield').value;
+    document.getElementById('contcLnT').setAttribute('href', document.getElementById('linkdfield').value);
+    document.getElementById('contcGtT').setAttribute('href', document.getElementById('gitfield').value);
+    document.getElementById('contcLcT').setAttribute('href', document.getElementById('leetfield').value);
+    document.getElementById('contcCfT').setAttribute('href', document.getElementById('codefield').value);
+    document.getElementById('contcPpT').setAttribute('href', document.getElementById('portfield').value);
 
-    // let langob = document.getElementsByClassName('langg');
-    // let str = "";
-    // for (l of langob) {
-    //     str += `<p>${l.value}<p>`;
-    // }
-    // document.getElementById('langT').innerHTML = str;
+    let langob = document.getElementsByClassName('langg');
+    let str = "";
+    for (l of langob) {
+        str += `<p>${l.value}<p>`;
+    }
+    document.getElementById('langT').innerHTML = str;
 
-    // let expob = document.getElementsByClassName('exp');
-    // let str1 = "";
-    // for (l of expob) {
-    //     str1 += `<p>${l.value}<p>`;
-    // }
-    // document.getElementById('expT').innerHTML = str1;
+    let expob = document.getElementsByClassName('exp');
+    let str1 = "";
+    for (l of expob) {
+        str1 += `<p>${l.value}<p>`;
+    }
+    document.getElementById('expT').innerHTML = str1;
 
-    // let quliob = document.getElementsByClassName('qulification');
-    // let str2 = "";
-    // for (let l of quliob) {
-    //     let nameob = l.getElementsByClassName('name');
-    //         let intsfield = nameob;
-    //         let qualifield = nameob.getElementById('qualifield');
-    //         str += `<div class="subedu"><div class="institue"><h2>${intsfield.value}</h2><p>${qualifield.value}</p></div></div>`;
 
-    // }
 
-    // document.getElementById('edu2').innerHTML = str2;
+    let quliob = document.getElementsByClassName('qulification');
+    let str2 = "";
+    //console.log(quliob.length);
+    for (let i=0;i<quliob.length;i++) {
+        let inputob = quliob[i].getElementsByClassName("intsfield")[0];
+        let inputob2 = quliob[i].getElementsByClassName("qualifield")[0];
+        let inputob3 = quliob[i].getElementsByClassName("marksfield")[0];
+        let inputob4 = quliob[i].getElementsByClassName("sdfield")[0];
+        let inputob5 = quliob[i].getElementsByClassName("edfield")[0];
+           
+        let s1=inputob4.value +' - '+ inputob5.value;
+        let s2='Marks - '+inputob3.value;
+            
+            str2 += `<div class="subedu">
+            <div class="date">
+                <p id="eduDT">${s1}</p>
+            </div>
+            <div class="institue">
+                <h2 id="eduInT">${inputob.value}</h2>
+                <p id="eduDgT">${inputob2.value}</p>
+                <p id="eduMkT">${s2}</p>
+            </div>
+        </div>`;
+
+    }
+
+    document.getElementById('edu2').innerHTML = str2;
+
+
+    let workob = document.getElementsByClassName('works');
+    let str3 = "";
+    //console.log(workob.length);
+    for (let i=0;i<workob.length;i++) {
+        let inputob = workob[i].getElementsByClassName("exppnfield")[0];
+        let inputob2 = workob[i].getElementsByClassName("expcnfield")[0];
+        let inputob3 = workob[i].getElementsByClassName("expdtlsfield")[0];
+        let inputob4 = workob[i].getElementsByClassName("expsdfield")[0];
+        let inputob5 = workob[i].getElementsByClassName("expedfield")[0];
+           
+        let s1=inputob4.value +' - '+ inputob5.value;
+        
+            
+            str3 += `<div class="date">
+            <p id="expDT">${s1}</p>
+        </div>
+        <div class="institue">
+            <h2 id="expPnT">${inputob.value}</h2>
+            <p id="expCnT" class="company">${inputob2.value}</p>
+            <p id="expDtlsT" class="remark">${inputob3.value}</p>
+        </div>`;
+
+    }
+
+    document.getElementById('subexp').innerHTML = str3;
+
+    let projob = document.getElementsByClassName('project');
+    let str4 = "";
+    //console.log(workob.length);
+    for (let i=0;i<projob.length;i++) {
+        let inputob = projob[i].getElementsByClassName("pronfield")[0];
+        let inputob2 = projob[i].getElementsByClassName("prodtlsfield")[0];
+        let inputob3 = projob[i].getElementsByClassName("prosdfield")[0];
+        let inputob4 = projob[i].getElementsByClassName("proedfield")[0];
+        
+           
+        let s1=inputob3.value +' - '+ inputob4.value;
+        
+            
+            str4 += `<div class="date">
+            <p id="proDT">${s1}</p>
+        </div>
+        <div class="institue">
+            <h2 id="proNT">${inputob.value}</h2>
+            
+            <p id="proDtlsT" class="remark">${inputob2.value}</p>
+        </div>`;
+
+    }
+
+    document.getElementById('subproj').innerHTML = str4;
+
+    let certiob = document.getElementsByClassName('certifi');
+    let str5 = "";
+    //console.log(workob.length);
+    for (let i=0;i<certiob.length;i++) {
+        let inputob = certiob[i].getElementsByClassName("ceritnfield")[0];
+        let inputob2 = certiob[i].getElementsByClassName("ceritdtlsfield")[0];
+        let inputob3 = certiob[i].getElementsByClassName("ceritdatefield")[0];
+        
+        
+        
+            
+            str5 += `<h2 id="ceriNT">${inputob.value}</h2>
+            <p id="certiCNT">${inputob2.value}</p>
+            <p id="certiDT">${inputob3.value}</p>`;
+
+    }
+
+    document.getElementById('certichild').innerHTML = str5;
 
 
 

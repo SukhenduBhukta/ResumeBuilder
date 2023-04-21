@@ -100,26 +100,26 @@
                         <div class="text"><label for=""><span style="color: red;">*</span>Educations : -</label></div>
                         <div class="qulification">
                             <div class="name">
-                                <input id="intsfield" type="text" placeholder="Enter Institute Name" />
-                            <input id="qualifield" type="text" placeholder="Enter Qualification">
+                                <input id="intsfield" class="intsfield" type="text" placeholder="Enter Institute Name" />
+                            <input class="qualifield" type="text" placeholder="Enter Qualification">
                             </div>
                             
                             <div class="date">
-                                <input id="marksfield" type="text" placeholder="Enter Marks with % or cgpa">
-                                <input id="sdfield" type="number" name="" placeholder="start Year">
-                                <input type="number" name="" id="edfield" placeholder="end Year">
+                                <input class="marksfield" type="text" placeholder="Enter Marks with % or cgpa">
+                                <input class="sdfield" type="number" name="" placeholder="start Year">
+                                <input type="number" name="" class="edfield" placeholder="end Year">
                             </div>
                         </div>
                         <div class="qulification">
                             <div class="name">
-                                <input id="intsfield" type="text" placeholder="Enter Institute Name" />
-                            <input id="qualifield" type="text" placeholder="Enter Qualification">
+                                <input class="intsfield" type="text" placeholder="Enter Institute Name" />
+                            <input class="qualifield" type="text" placeholder="Enter Qualification">
                             </div>
                             
                             <div class="date">
-                                <input id="marksfield" type="text" placeholder="Enter Marks with % or cgpa">
-                                <input id="sdfield" type="number" name="" placeholder="start Year">
-                                <input type="number" name="" id="edfield" placeholder="end Year">
+                                <input class="marksfield" type="text" placeholder="Enter Marks with % or cgpa">
+                                <input class="sdfield" type="number" name="" placeholder="start Year">
+                                <input type="number" name="" class="edfield" placeholder="end Year">
                             </div>
                         </div>
                     </div>
@@ -128,41 +128,41 @@
                 </div>
                 <div class="certificates">
                     <p>Certificates</p>
-                    <div class="labinput" id="certifi">
+                    <div class="labinput certifi" id="certifi">
                         <div class="text"><label for="">Certificates : -</label></div>
                         <div class="certi">
-                            <input id="ceritnfield" type="text" placeholder="Enter Name" />
-                            <input id="ceritdtlsfield" type="text" placeholder="Enter Details about Certificate">
-                            <input id="ceritdatefield" type="date">
+                            <input class="ceritnfield" type="text" placeholder="Enter Name" />
+                            <input class="ceritdtlsfield" type="text" placeholder="Enter Details about Certificate">
+                            <input class="ceritdatefield" type="date">
                         </div>
                     </div>
                     <button onclick="AddCerti()">ADD MORE</button>
                 </div>
                 <div class="experinces">
                     <p>Experinces</p>
-                    <div class="labinput" id="work">
+                    <div class="labinput works" id="work">
                         <div class="text"><label for="">Work Experinces : -</label>
                         </div>
-                        <input id="exppnfield" type="text" placeholder="Enter Position Name" />
-                        <input id="expcnfield" type="text" placeholder="Enter Company Name" />
-                        <textarea id="expdtlsfield" name="" id="" rows="3" placeholder="Enter Details"></textarea>
+                        <input class="exppnfield" type="text" placeholder="Enter Position Name" />
+                        <input class="expcnfield" type="text" placeholder="Enter Company Name" />
+                        <textarea class="expdtlsfield" name="" id="" rows="3" placeholder="Enter Details"></textarea>
                         <div class="date">
-                            <input id="expsdfield" type="number" name="" id="" placeholder="start Year">
-                            <input id="expedfield" type="number" name="" id="" placeholder="end Year">
+                            <input class="expsdfield" type="number" name="" id="" placeholder="start Year">
+                            <input class="expedfield" type="number" name="" id="" placeholder="end Year">
                         </div>
                     </div>
                     <button onclick="AddWork()">ADD MORE</button>
                 </div>
                 <div class="projects">
                     <p>Projects</p>
-                    <div class="labinput" id="project">
+                    <div class="labinput project" id="project">
                         <div class="text"><label for="">Projects : -</label>
                         </div>
-                        <input id="pronfield" type="text" placeholder="Enter Project Name" />
-                        <textarea name="" id="prodtlsfield" rows="3" placeholder="Enter Details"></textarea>
+                        <input class="pronfield" type="text" placeholder="Enter Project Name" />
+                        <textarea name="" class="prodtlsfield" rows="3" placeholder="Enter Details"></textarea>
                         <div class="date">
-                            <input id="prosdfield" type="number" name="" id="" placeholder="start Year">
-                            <input id="proedfield" type="number" name="" id="" placeholder="end Year">
+                            <input class="prosdfield" type="number" name="" id="" placeholder="start Year">
+                            <input class="proedfield" type="number" name="" id="" placeholder="end Year">
                         </div>
                     </div>
                     <button onclick="AddProject()">ADD MORE</button>
@@ -191,16 +191,12 @@
     
                     <div class="certi">
                         <h1>certificate</h1>
-                        <div class="certichild">
+                        <div class="certichild" id="certichild">
                             <h2 id="ceriNT">TCS CodeVita</h2>
                             <p id="certiCNT">Tata Consultancy Services</p>
                             <p id="certiDT">2021</p>
                         </div>
-                        <div class="certichild">
-                            <h2>TCS CodeVita</h2>
-                            <p>Tata Consultancy Services</p>
-                            <p>2021</p>
-                        </div>
+                        
     
                     </div>
     
@@ -235,74 +231,36 @@
                     </p>
                     <div class="edu">
                         <h1>Education</h1>
-                        <div id="edu2"></div>
-                        <div class="subedu">
-                            <div class="date">
-                                <p id="eduDT">2019 - 2023</p>
-                            </div>
-                            <div class="institue">
-                                <h2 id="eduInT">College of Engineering and Management, Kolaghat</h2>
-                                <p id="eduDgT">B.Tech</p>
-                                <p id="eduMkT">Marks - 8.5 cgpa</p>
-                            </div>
-                        </div>
-                        <div class="subedu">
-                            <div class="date">
-                                <p>2019 - 2023</p>
-                            </div>
-                            <div class="institue">
-                                <h2>College of Engineering and Management, Kolaghat</h2>
-                                <p class="category">B.Tech</p>
-                                <p class="remark">Marks - 8.5 cgpa</p>
+                        <div id="edu2">
+                            <div class="subedu">
+                                <div class="date">
+                                    <p id="eduDT">2019 - 2023</p>
+                                </div>
+                                <div class="institue">
+                                    <h2 id="eduInT">College of Engineering and Management, Kolaghat</h2>
+                                    <p id="eduDgT">B.Tech</p>
+                                    <p id="eduMkT">Marks - 8.5 cgpa</p>
+                                </div>
                             </div>
                         </div>
+                        
+                        
                     </div>
     
     
                     <div class="work">
                         <h1>work Experience</h1>
-                        <div class="subexp">
-                            <div class="date">
-                                <p id="expDT">2019 - 2023</p>
-                            </div>
-                            <div class="institue">
-                                <h2 id="expPnT">Junior Software Devolper</h2>
-                                <p id="expCnT" class="company">TCS</p>
-                                <p id="expDtlsT" class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
-                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
-                                    architecto et aliquid similique labore!</p>
-                            </div>
+                        <div class="subexp" id="subexp">
+                            
                         </div>
-                        <div class="subexp">
-                            <div class="date">
-                                <p>2019 - 2023</p>
-                            </div>
-                            <div class="institue">
-                                <h2>Junior Software Devolper</h2>
-                                <p class="company">TCS</p>
-                                <p class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
-                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
-                                    architecto et aliquid similique labore!</p>
-                            </div>
-                        </div>
+                        
                     </div>
     
     
                     <div class="proj">
                         <h1>Project</h1>
-                        <div class="subproj">
-                            <div class="date">
-                                <p id="proDT">2019 - 2023</p>
-                            </div>
-                            <div class="institue">
-                                <h2 id="proNT">Junior Software Devolper</h2>
-                                
-                                <p id="proDtlsT" class="remark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint. Eum qui,
-                                    eveniet illo expedita culpa nisi est placeat officia totam deserunt accusamus id at
-                                    architecto et aliquid similique labore!</p>
-                            </div>
-                        </div>
-                        <div class="subproj">
+                        
+                        <div class="subproj" id="subproj">
                             <div class="date">
                                 <p>2019 - 2023</p>
                             </div>
