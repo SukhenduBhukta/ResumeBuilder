@@ -397,7 +397,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 2rem 0;
-  border-bottom: 1px solid #d5d4d4;
+  border-bottom: 1px solid #585858;
 }
 .maincontainer .subcontainer .container .right .education .qulification input {
   margin: 1rem;
@@ -468,7 +468,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #d5d4d4;
+  border-bottom: 1px solid #585858;
 }
 .maincontainer .subcontainer .container .right .experinces .date input {
   margin: 1rem 0.5rem;
@@ -497,7 +497,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #d5d4d4;
+  border-bottom: 1px solid #585858;
 }
 .maincontainer .subcontainer .container .right .projects .date input {
   margin: 1rem 0.5rem;

@@ -240,6 +240,7 @@ const GenerateCV = () => {
     document.getElementById('expT').innerHTML = str1;
 
 
+    //Education Data fetch
 
     let quliob = document.getElementsByClassName('qulification');
     let str2 = "";
@@ -270,6 +271,8 @@ const GenerateCV = () => {
     document.getElementById('edu2').innerHTML = str2;
 
 
+    //Work Exp Data fetch
+
     let workob = document.getElementsByClassName('works');
     let str3 = "";
     //console.log(workob.length);
@@ -296,6 +299,8 @@ const GenerateCV = () => {
 
     document.getElementById('subexp').innerHTML = str3;
 
+
+    //Project Data fetch
     let projob = document.getElementsByClassName('project');
     let str4 = "";
     //console.log(workob.length);
@@ -322,6 +327,8 @@ const GenerateCV = () => {
 
     document.getElementById('subproj').innerHTML = str4;
 
+
+    //Certificate Data fetch
     let certiob = document.getElementsByClassName('certifi');
     let str5 = "";
     //console.log(workob.length);
