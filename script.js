@@ -351,6 +351,15 @@ const GenerateCV = () => {
 
 
 
+
+    let file=document.getElementById("imgfield").files[0];
+
+    let reader=new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend=function (){
+        document.getElementById("pic").src=reader.result;
+    };
+
     document.getElementById('cv-build').style.display = 'none';
     document.getElementById('cvT').style.display = 'flex';
 };
